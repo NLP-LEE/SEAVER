@@ -2,16 +2,6 @@
 
 This repository is the *Self-Augmentation via Self-Reweighting* (SEAVER) modified version of [the original C-STS models](https://github.com/princeton-nlp/c-sts) for better suiting the C-STS nature.
 
-## 🔥📢 Supplementary Materials for the ARR-April Review
-
-<img src="./img/roberta.png" style="zoom: 25%;" />
-
-**Figure 1:** The performance of the RoBERTa series models on the C-STS-2023 validation set assessed by partitioning samples according to different similarity labels. The enhancement of RoBERTa with SEAVER showed a significant advantage in improving the model's predictive capability for labels 1 and 5, which represent more challenging similarity measurement tasks. However, for labels 2, 3, and 4—tasks that are relatively easier in terms of similarity measurement for the pre-trained + C-STS fine-tuned model—no significant improvement was observed. A more detailed analysis is provided in the author response section on OpenReview.
-
-<img src="./img/simcse.png" alt="simcse" style="zoom: 25%;" />
-
-**Figure 2:** The performance of the SimCSE series models on the C-STS-2023 validation set assessed by partitioning samples according to different similarity labels. The enhancement of SimCSE with SEAVER showed a significant advantage in improving the model's predictive capability for label 5, which represents more challenging similarity measurement task. However, for labels 1, 2, 3, and 4—tasks that are relatively easier in terms of similarity measurement for the pre-trained + STS fine-tuned + C-STS fine-tuned model—no significant improvement was observed. A more detailed analysis is provided in the author response section on OpenReview.
-
 ## Fine-tuning
 
 You can finetune the models described in the paper using the `run_sts.sh` script. For example, to finetune the `princeton-nlp/sup-simcse-roberta-base` model on the C-STS dataset, run the following command:
